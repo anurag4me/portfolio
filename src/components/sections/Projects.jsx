@@ -13,7 +13,8 @@ export const Projects = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-2">Home Rentals Application</h3>
+              <img src="/portfolio/home-rentals.png" alt="Home Rentals Application" />
+              <h3 className="text-xl font-bold my-2">Home Rentals Application</h3>
               <p className="text-gray-400 mb-4">
                 Full-featured rental platform with listing creation, image uploads, bookings with calendar, wishlist management, and keyword-based property search.
               </p>
@@ -40,6 +41,7 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
+
             <div
               className="
                 glass p-6 rounded-xl border border-white/10 
@@ -48,7 +50,49 @@ export const Projects = () => {
                 transition-all
               "
             >
-              <h3 className="text-xl font-bold mb-2">AI Website Builder</h3>
+              <img src="/portfolio/uber-clone.png" alt="Uber App Clone" />
+              <h3 className="text-xl font-bold my-2">Uber App Clone</h3>
+              <p className="text-gray-400 mb-4">
+                Ride-booking platform with real-time driver tracking, route mapping, and secure login system. Built with the MERN stack.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["React", "Node.js", "MongoDB", "Google Maps API"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="
+                        bg-blue-500/10 text-blue-500 py-1 px-3 
+                        rounded-full text-sm
+                        transition
+                        hover:bg-blue-500/20 hover:-translate-y-0.5
+                        hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                      "
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://github.com/anurag4me/uber-app"
+                  target="_blank"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>
+              </div>
+            </div>
+
+            
+            <div
+              className="
+                glass p-6 rounded-xl border border-white/10 
+                hover:-translate-y-1 hover:border-blue-500/30
+                hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
+                transition-all
+              "
+            >
+              <img src="/portfolio/web-builder.png" alt="Website Builder Assistant" />
+              <h3 className="text-xl font-bold my-2">AI Website Builder</h3>
               <p className="text-gray-400 mb-4">
                 Drag-and-drop website builder with live preview, user authentication, and dynamic content generation using reusable components.
               </p>
@@ -87,46 +131,8 @@ export const Projects = () => {
                 transition-all
               "
             >
-              <h3 className="text-xl font-bold mb-2">Uber App Clone</h3>
-              <p className="text-gray-400 mb-4">
-                Ride-booking platform with real-time driver tracking, route mapping, and secure login system. Built with the MERN stack.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "Node.js", "MongoDB", "Google Maps API"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="
-                        bg-blue-500/10 text-blue-500 py-1 px-3 
-                        rounded-full text-sm
-                        transition
-                        hover:bg-blue-500/20 hover:-translate-y-0.5
-                        hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                      "
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://github.com/anurag4me/uber-app"
-                  target="_blank"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project →
-                </a>
-              </div>
-            </div>
-
-            <div
-              className="
-                glass p-6 rounded-xl border border-white/10 
-                hover:-translate-y-1 hover:border-blue-500/30
-                hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
-                transition-all
-              "
-            >
-              <h3 className="text-xl font-bold mb-2">Smart Parking System</h3>
+              <img src="/portfolio/smart-parking.png" alt="Smart Parking System" />
+              <h3 className="text-xl font-bold my-2">Smart Parking System</h3>
               <p className="text-gray-400 mb-4">
                 IoT-powered Flutter app with real-time parking slot booking, countdown timers, and live hardware integration via Raspberry Pi.
               </p>
