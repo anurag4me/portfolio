@@ -6,6 +6,7 @@ import { Home } from "./components/sections/Home";
 import { About } from "./components/sections/About.jsx";
 import { Projects } from "./components/sections/Projects.jsx";
 import { Contact } from "./components/sections/Contact.jsx";
+import { Certifications } from "./components/sections/Certifications.jsx";
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -19,6 +20,7 @@ const App = () => {
         <Home />
         <About />
         <Projects />
+        <Certifications />
         <Contact />
       </div>
     </>
